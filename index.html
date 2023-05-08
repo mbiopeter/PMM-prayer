@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMM Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="menu_side">
+            <h1>PlayList</h1>
+            <div class="playlist">
+               <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4> 
+               <h4><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4> 
+               <h4><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4> 
+            </div>
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="img/0.jpg" alt="">
+                    <h5>Think Abaut the children <br>
+                        <div class="subtitle">Lucky dube</div>
+                    </h5>
+                    <i class="bi PlayListPlay bi-play-circle-fill" id="1"></i>
+                </li>
+
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="img/2.jpg" alt="">
+                    <h5>Usizi <br>
+                        <div class="subtitle">Lucky dube</div>
+                    </h5>
+                    <i class="bi PlayListPlay bi-play-circle-fill" id="2"></i>
+                </li>     
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="img/0.jpg" alt="">
+                    <h5>Let Jah be Praised <br>
+                        <div class="subtitle">Lucky dube</div>
+                    </h5>
+                    <i class="bi PlayListPlay bi-play-circle-fill" id="3"></i>
+                </li>   
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="img/4a.jfif" alt="">
+                    <h5>On My Way <br>
+                        <div class="subtitle">UB40</div>
+                    </h5>
+                    <i class="bi PlayListPlay bi-play-circle-fill" id="4"></i>
+                </li>              
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="img/5.jfif" alt="">
+                    <h5>One love <br>
+                        <div class="subtitle">Bob Merley</div>
+                    </h5>
+                    <i class="bi PlayListPlay bi-play-circle-fill" id="5"></i>
+                </li>   
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="img/6.jfif" alt="">
+                    <h5>Buffalo Soldier <br>
+                        <div class="subtitle">Bob Merley</div>
+                    </h5>
+                    <i class="bi PlayListPlay bi-play-circle-fill" id="6"></i>
+                </li>   
+                <li class="songItem">
+                    <span>07</span>
+                    <img src="img/7.jfif" alt="">
+                    <h5>Waiting in vain <br>
+                        <div class="subtitle">Bob Merley</div>
+                    </h5>
+                    <i class="bi PlayListPlay bi-play-circle-fill" id="7"></i>
+                </li>   
+                <li class="songItem">
+                    <span>08</span>
+                    <img src="img/8.jfif" alt="">
+                    <h5>I'll be there <br>
+                        <div class="subtitle">UB$40</div>
+                    </h5>
+                    <i class="bi PlayListPlay bi-play-circle-fill" id="8"></i>
+                </li>   
+                <li class="songItem">
+                    <span>09</span>
+                    <img src="img/9.jfif" alt="">
+                    <h5>Jah Rastafari <br>
+                        <div class="subtitle">Culture</div>
+                    </h5>
+                    <i class="bi PlayListPlay bi-play-circle-fill" id="9"></i>
+                </li>   
+                <li class="songItem">
+                    <span>10</span>
+                    <img src="img/10.jfif" alt="">
+                    <h5>Nothing but prayers <br>
+                        <div class="subtitle">Senzo muheteres</div>
+                    </h5>
+                    <i class="bi PlayListPlay bi-play-circle-fill" id="10"></i>
+                </li>   
+                <li class="songItem">
+                    <span>11</span>
+                    <img src="img/11.jfif" alt="">
+                    <h5>Play Me a Love Song <br>
+                        <div class="subtitle">Nora Dean</div>
+                    </h5>
+                    <i class="bi PlayListPlay bi-play-circle-fill" id="11"></i>
+                </li>   
+                <li class="songItem">
+                    <span>12</span>
+                    <img src="img/12.jfif" alt="">
+                    <h5>One Gradson<br>
+                        <div class="subtitle">Culture</div>
+                    </h5>
+                    <i class="bi PlayListPlay bi-play-circle-fill" id="12"></i>
+                </li>   
+            </div>
+        </div>
+
+
+
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>Discover <span></span></li>
+                    <li>My Library</li>
+                    <li>Radio</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music">
+                </div>
+                 <div class="user">
+                    <img src="img/bg.jfif" alt="">
+                 </div>
+            </nav>
+            <div class="content">
+                <h1 id="artist">Lucky Dube - Let Jah Be Praised</h1>
+                <p>we've got the winds tha blows every, we've got the moon and the stars that gives us light in the dark<br>We've got life, but at the conners of our mind we've got the question.</p>
+                <div class="buttons">
+                    <button id="play">PLAY</button>
+                    <button>FOLLOW</button>
+                </div>
+            </div>
+
+            <div class="populer_song">
+                <div class="h4">
+                    <h4>Popular songs</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_song_left"></i> 
+                        <i class="bi bi-arrow-right-short" id="pop_song_right"></i> 
+                    </div>
+                </div>
+
+                <div class="pop_song">
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/a.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="13"></i>
+                        </div>
+                        <h5>Love Song <br>
+                            <div class="subtitle">Etana</div>
+                        </h5>
+                    </li>   
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/b.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="14"></i>
+                        </div>
+                        <h5>I Rise <br>
+                            <div class="subtitle">Etana</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/c.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="15"></i>
+                        </div>
+                        <h5>I will love you without condition <br>
+                            <div class="subtitle">Etana</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/d.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="16"></i>
+                        </div>
+                        <h5>Send Me The Pillow <br>
+                            <div class="subtitle">Cythia schools</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/e.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="17"></i>
+                        </div>
+                        <h5>I Am Dreamin Of A Little Island <br>
+                            <div class="subtitle">Judy Boucher</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/f.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="18"></i>
+                        </div>
+                        <h5>Hello<br>
+                            <div class="subtitle">Adele</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/g.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="19"></i>
+                        </div>
+                        <h5>As If I Din't Know<br>
+                            <div class="subtitle">Cythia schools</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/h.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="20"></i>
+                        </div>
+                        <h5>Dream Lover <br>
+                            <div class="subtitle">Barbara Jones</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/i.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="21"></i>
+                        </div>
+                        <h5>Praising God<br>
+                            <div class="subtitle">Carlen Davis</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/j.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="22"></i>
+                        </div>
+                        <h5>Stealing Love <br>
+                            <div class="subtitle">Carlen Davis</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/k.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="23"></i>
+                        </div>
+                        <h5>On My Way <br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/l.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="24"></i>
+                        </div>
+                        <h5>Weakness in me <br>
+                            <div class="subtitle">Etana</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/m.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="25"></i>
+                        </div>
+                        <h5>I shall Sing<br>
+                            <div class="subtitle">Marcia Griffts</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/n.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="26"></i>
+                        </div>
+                        <h5>All My Life<br>
+                            <div class="subtitle">Marcia Griffts</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/o.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="27"></i>
+                        </div>
+                        <h5>Stick By Me<br>
+                            <div class="subtitle">JC_Lodge</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/p.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="28"></i>
+                        </div>
+                        <h5>Jet Plane<br>
+                            <div class="subtitle">Sonia Spence</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/p.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="29"></i>
+                        </div>
+                        <h5>You Cought My Eyes<br>
+                            <div class="subtitle">Judy Boucher</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/q.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="30"></i>
+                        </div>
+                        <h5>Thank You Lord<br>
+                            <div class="subtitle">Judy Mowatt</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/r.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="31"></i>
+                        </div>
+                        <h5>Make It Up<br>
+                            <div class="subtitle">June Lodge</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/s.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="32"></i>
+                        </div>
+                        <h5>To Love Someone<br>
+                            <div class="subtitle">June Lodge</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/t.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="33"></i>
+                        </div>
+                        <h5>More Than I Can Say<br>
+                            <div class="subtitle">June Lodge</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/t.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="34"></i>
+                        </div>
+                        <h5>Someone Loves You Honey <br>
+                            <div class="subtitle">June Lodge</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/u.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="35"></i>
+                        </div>
+                        <h5>Holding You Close<br>
+                            <div class="subtitle">Marcia Grifths</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/v.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="36"></i>
+                        </div>
+                        <h5>The first Cut <br>
+                            <div class="subtitle">Marcia Grifths</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/w.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="37"></i>
+                        </div>
+                        <h5>Girle gale <br>
+                            <div class="subtitle">Sophia gorge</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/x.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="38"></i>
+                        </div>
+                        <h5>Tenement Yard <br>
+                            <div class="subtitle">Sophia gorge</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/y.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="39"></i>
+                        </div>
+                        <h5>Step Up <br>
+                            <div class="subtitle">Irie</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/z.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="40"></i>
+                        </div>
+                        <h5>The Blessings<br>
+                            <div class="subtitle">Blessings</div>
+                        </h5>
+                    </li>  
+                    <li class="songItem">
+                        <div class="img_play">
+                           <img src="img/r.jfif" alt="">
+                            <i class="bi PlayListPlay bi-play-circle-fill" id="41"></i>
+                        </div>
+                        <h5>Why<br>
+                            <div class="subtitle">Cythia Schools</div>
+                        </h5>
+                    </li> 
+                </div>
+            </div>
+
+            <div class="popular_artists">
+                <div class="h4">
+                    <h4>Popular artists</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_art_left"></i> 
+                        <i class="bi bi-arrow-right-short" id="pop_art_right"></i> 
+                    </div>
+                </div>
+                <div class="item artists_bx">
+                    <li>
+                        <img src="img/2.jfif"></img>
+                    </li>   
+                    <li>
+                        <img src="img/5.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/12.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/14.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/16.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/22.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/c.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/b.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/24.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/g.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/r.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/i.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/h.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/j.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/l.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/m.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/x.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/p.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/n.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/o.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/q.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/t.jfif"></img>
+                    </li>  
+                    <li>
+                        <img src="img/u.jfif"></img>
+                    </li>  
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="master_play">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="img/0.jpg" alt="" id="poster_master_play">
+            <h5 id="title">
+                Let Jah Be Praised
+                <div class="subtitle">Lucky Dube</div>
+            </h5>
+            <div class="icon">
+                <i class="bi shuffle bi-music-note-beamed">next</i>
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>   
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:30</span>
+            <div class="vol">
+                <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                <input type="range" min="0" max="100" id="vol">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+
+    </header>
+
+    <script src="app.js"></script>
+</body>
+</html>
