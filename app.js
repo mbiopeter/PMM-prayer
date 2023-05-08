@@ -344,7 +344,7 @@ let artist = document.getElementById("artist");
 Array.from(document.getElementsByClassName("PlayListPlay")).forEach((e)=>{
     e.addEventListener('click', (el)=>{
         index  = el.target.id;
-        music.src =`audio/${index}.mp3`
+        music.src =`music/${index}.mp3`
         music.play();
         wave.classList.add('active1');
         masterPlay.classList.remove("bi-play-fill");
@@ -530,7 +530,7 @@ next.addEventListener('click', () => {
         index = 1; 
 
     }
-    music.src =`audio/${index}.mp3`
+    music.src =`music/${index}.mp3`
     music.play();
     wave.classList.add('active1');
     masterPlay.classList.remove("bi-play-fill");
@@ -623,7 +623,7 @@ const next_music = () => {
     } else {
        index++; 
     }
-    music.src =`audio/${index}.mp3`
+    music.src =`music/${index}.mp3`
     music.play();
     wave.classList.add('active1');
     masterPlay.classList.remove("bi-play-fill");
@@ -647,7 +647,7 @@ const next_music = () => {
 
 const repeat_music = () => {
     index;
-    music.src =`audio/${index}.mp3`
+    music.src =`music/${index}.mp3`
     music.play();
     wave.classList.add('active1');
     masterPlay.classList.remove("bi-play-fill");
@@ -675,7 +675,7 @@ const random_music = () => {
     } else {
        index = Math.floor((Math.random() * songs.length) + 1);
     }
-    music.src =`audio/${index}.mp3`
+    music.src =`music/${index}.mp3`
     music.play();
     wave.classList.add('active1');
     masterPlay.classList.remove("bi-play-fill");
