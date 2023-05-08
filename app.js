@@ -1,4 +1,4 @@
-const music = new Audio('audio/3.mp3');
+const music = new Audio('music/3.mp3');
 
 let n_music = 41;
 const songs = [
