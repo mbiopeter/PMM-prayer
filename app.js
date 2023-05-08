@@ -496,7 +496,7 @@ back.addEventListener('click', () => {
         index = Array.from(document.getElementsByClassName('songItem')).length; 
 
     }
-    music.src =`audio/${index}.mp3`
+    music.src =`music/${index}.mp3`
     music.play();
     wave.classList.add('active1');
     masterPlay.classList.remove("bi-play-fill");
